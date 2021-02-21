@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>My Family</title>
+<link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <div>
+        <center>
+
+            <h1>My Family Book</h1>
+            <img id="img" src="51Veiu1H60L.jpg">
+            <br>
+            <h2 id="name">Family Book</h2>
+            <button onclick="next()">Next</button>
+        </center>
+        
+
+    </div>
+    <script>
+        var images=["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm1vi3Ty1h_KlQj9Dop0hcYYAcAGsn-fjQOg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtwAkomKoTs8bNcDN63acMyCgdVJ6s0fjWFg&usqp=CAU", "https://www.pngitem.com/pimgs/m/331-3319636_brother-and-sister-clipart-transparent-cartoons-brother-and.png", "https://us.123rf.com/450wm/yupiramos/yupiramos1904/yupiramos190413303/121007296-stock-vector-little-girl-kid-character-vector-illustration-design.jpg?ver=6", "https://cdn3.iconfinder.com/data/icons/family-member-flat-happy-family-day/512/Brother-512.png","https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg"];
+        var names=[ "Kris Soekiatno", "Katherin Wijaya", "Aaron Soekiatno", "Chloe Soekiatno","Elbert Soekiatno","Family Book"];
+        var i=0;
+        function next()
+        {
+            document.getElementById("img").src=images[i];
+            document.getElementById("name").innerHTML=names[i];
+            i++;
+            if (i == 6)
+            {
+                i=0;
+            }
+        }
+    </script>
+</body>
+</html>
